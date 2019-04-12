@@ -4,7 +4,6 @@ public class Triangular extends Shape {
     private Point coordinatesOne;
     private Point coordinatesTwo;
     private Point coordinatesThree;
-    Point point = new Point();
 
     public Triangular() {
         super();
@@ -43,7 +42,7 @@ public class Triangular extends Shape {
 
     @Override
     public double calculatePerimeter() {
-        double perimetr = point.straightline(coordinatesOne, coordinatesTwo) + point.straightline(coordinatesTwo, coordinatesThree) + point.straightline(coordinatesThree, coordinatesOne);
+        double perimetr = Point.straightline(coordinatesOne, coordinatesTwo) + Point.straightline(coordinatesTwo, coordinatesThree) + Point.straightline(coordinatesThree, coordinatesOne);
         return perimetr;
     }
 
